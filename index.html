@@ -6,10 +6,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
-    <h1 class="text-amber-500 ">Hello</h1>
+    <!-- Header Section -->
+    <header class="w-full bg-[#1A0B2E]">
+
+        <!-- Navbar -->
+
+        <nav class="border-b-2 border-[#412567]">
+            <div class="navbar-wrapper w-7/8 lg:w-3/4 mx-auto p-6 flex justify-between items-center">
+                <div class="nav-logo w-35 lg:w-50 ">
+                    <img src="./assets/nav-logo.png" alt="">
+                </div>
+                <div class="nav-links hidden lg:block">
+                    <ul class="*:text-white flex *:hover:text-amber-300 justify-between gap-8">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Episodes</a></li>
+                        <li><a href="">Host</a></li>
+                    </ul>
+                </div>
+                <div class="ham-icon block lg:hidden">
+                    <img src="assets/hamburger-menu.png" alt="">
+                </div>
+                <button
+                    class="btn hidden lg:block px-8 py-3 rounded-full text-white bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Subscribe
+                    <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero w-full bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-contain bg-center">
+            <div
+                class="hero-wrapper w-3/4 py-25 lg:py-35 mx-auto flex flex-col gap-25 lg:gap-15 justify-center items-center">
+
+                <!-- Hero Image -->
+                <div class="hero-img relative">
+                    <img class="w-60 md:w-85 lg:w-105 translate-y-20 lg:translate-y-0" src="./assets/hero-circle.png"
+                        alt="">
+                    <img class="w-20 md:w-25 lg:w-35 absolute top-40 lg:top-0 inset-0 m-auto"
+                        src="./assets/microphone.png" alt="">
+                    <div class="new-badge absolute -right-10 md:right-0 top-15 lg:top-0 inset-0 m-auto">
+                        <h1
+                            class="text-center font-semibold text-lg w-24 px-6 py-2 bg-[#00FF88] rounded-full shadow-[0_0_40px_rgba(0,255,136,0.6)] absolute right-10">
+                            NEW</h1>
+                    </div>
+                </div>
+
+                <!-- Hero Content -->
+                <div class="hero-content *:text-white *:text-center flex flex-col items-center gap-4">
+                    <h1 class="text-5xl lg:text-7xl font-extrabold">TechWave</h1>
+                    <p class="font-light">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <div class="btns mt-4 flex gap-3">
+                        <button
+                            class="px-8 py-3 rounded-full bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] flex gap-2 whitespace-nowrap"><img
+                                src="./assets/spotify.png" alt="">Listen on Spotify</button>
+                        <button class="px-8 py-3 rounded-full text-[#00FF88] border border-[#00FF88] flex gap-2"><img
+                                src="./assets/message.png" alt="">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <!-- About Podcast Section -->
+        <section class="about-podcast w-full bg-[#1A0B2E]">
+            <div
+                class="podcast-wrapper w-3/4 py-10 lg:py-15 mx-auto flex flex-col gap-25 lg:gap-15 justify-center items-center">
+                <div class="podcast-content space-y-10 *:text-white text-center">
+                    <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">About the Podcast</h1>
+                    <p class="font-extralight">TechWave is your go-to podcast for staying ahead in the fast-paced world
+                        of
+                        technology.<br>
+                        We break down complex topics into digestible insights, explore productivity strategies that
+                        actually work,<br>
+                        and share stories of personal growth from industry leaders. <br><br><br>Join thousands of young
+                        professionals and tech enthusiasts who start their day with TechWave.
+                    </p>
+                </div>
+                <hr class="w-3/4 text-[#5e5e5e]">
+                <div
+                    class="stats-cards [&_h2]:text-[#00FF88] [&_h2]:text-4xl [&_p]:text-white [&_p]:font-light grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between items-center gap-25 text-center [&_.stats-card]:flex [&_.stats-card]:flex-col [&_.stats-card]:gap-3">
+                    <div class="stats-card">
+                        <h2>150K+</h2>
+                        <p>Monthly Listeners</p>
+                    </div>
+                    <div class="stats-card">
+                        <h2>200+</h2>
+                        <p>Episodes Published</p>
+                    </div>
+                    <div class="stats-card">
+                        <h2>4.9★</h2>
+                        <p>Average Rating</p>
+                    </div>
+                    <div class="stats-card">
+                        <h2>50+</h2>
+                        <p>Industry Experts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section class="why-choose w-full bg-[#230E3D]">
+            <div
+                class="why-choose-wrapper w-3/4 py-15 lg:py-25 mx-auto flex flex-col gap-25 lg:gap-15 justify-center items-center *:text-white ">
+                <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">Why Choose TechWave</h1>
+
+                <div
+                    class="why-cards [&_.why-card]:p-10 [&_.why-card]:rounded-4xl [&_.why-card]:flex [&_.why-card]:flex-col [&_.why-card]:items-start [&_.why-card]:gap-3 grid grid-cols-1 lg:grid-cols-3 gap-8 [&_h2]:text-2xl [&_h2]:font-bold [&_img]:mb-5">
+                    <div class="why-card bg-[#2d1251] row-span-2">
+                        <div><img src="./assets/headphone.png" alt=""></div>
+                        <h2>Premium Audio Quality</h2>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio
+                            engineering. Every episode is mastered for optimal listening across all devices and
+                            platforms.</p>
+                    </div>
+                    <div class="why-card bg-[#2d1251] col-span-2">
+                        <div><img src="./assets/device.png" alt=""></div>
+                        <h2>Mobile Friendly</h2>
+                        <p>Listen on the go with seamless mobile experience and offline downloads.</p>
+                    </div>
+                    <div class="why-card bg-[#2d1251] col-span-2">
+                        <div><img src="./assets/location.png" alt=""></div>
+                        <h2>Global Community</h2>
+                        <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                    </div>
+                    <div class="why-card bg-[#2d1251] col-span-2">
+                        <div><img src="./assets/zap-fast.png" alt=""></div>
+                        <h2>Exclusive Interviews</h2>
+                        <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host
+                            secures exclusive conversations you won't find anywhere else, diving deep into their
+                            journeys, failures, and success strategies.</p>
+                    </div>
+                    <div class="why-card bg-[#2d1251]">
+                        <div><img src="./assets/resource.png" alt=""></div>
+                        <h2>Rich Resources</h2>
+                        <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured EP Section -->
+        <section class="feature-ep w-full bg-[#1A0B2E]">
+            <div
+                class="feature-ep-wrapper w-3/4 py-15 lg:py-25 mx-auto flex flex-col gap-25 lg:gap-15 justify-center items-center *:text-white ">
+                <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">Featured Episodes</h1>
+
+                <div
+                    class="feature-cards [&_.feature-card-content]:p-10 [&_.feature-card]:rounded-4xl [&_.feature-card]:flex [&_.feature-card]:flex-col [&_.feature-card]:items-start grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 [&_h2]:text-2xl [&_h2]:font-bold [&_iframe]:mb-5">
+
+                    <div class="feature-card bg-[#2d1251]">
+                        <iframe class="w-full h-70 rounded-t-4xl"
+                            src="https://www.youtube.com/embed/oX7OduG1YmI?si=LIvejst-1XeZ9Y1y"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <div class="feature-card-content space-y-3">
+                            <h2>Building Better Habits for Remote Work</h2>
+                            <p>Exploring how artificial intelligence is transforming our daily routines and what to
+                                expect
+                                in the next decade.</p>
+
+                            <p class="flex gap-2"><img src="assets/clock.png" alt="">42 min</p>
+                        </div>
+                    </div>
+                    <div class="feature-card bg-[#2d1251]">
+                        <iframe class="w-full h-70 rounded-t-4xl"
+                            src="https://www.youtube.com/embed/7ARBJQn6QkM?si=cY72hejirUolQK3c"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <div class="feature-card-content space-y-3">
+                            <h2>The Future of AI in Everyday Life</h2>
+                            <p>Practical strategies for staying productive and maintaining work-life balance in a remote
+                                environment.</p>
+
+                            <p class="flex gap-2"><img src="assets/clock.png" alt="">42 min</p>
+                        </div>
+                    </div>
+                    <div class="feature-card bg-[#2d1251]">
+                        <iframe class="w-full h-70 rounded-t-4xl"
+                            src="https://www.youtube.com/embed/hmtuvNfytjM?si=erIfhdQ6uG71dWM1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <div class="feature-card-content space-y-3">
+                            <h2>Career Growth in Tech: A Roadmap</h2>
+                            <p>Expert advice on navigating your tech career from junior developer to senior leadership
+                                roles.</p>
+
+                            <p class="flex gap-2"><img src="assets/clock.png" alt="">42 min</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Host Section -->
+    </main>
 </body>
 
 </html>
